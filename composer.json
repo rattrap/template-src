@@ -1,0 +1,25 @@
+{
+  "name": "rattrap/template-src",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonard Mocanu",
+      "email": "leonard.mocanu@ymail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acme\\App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Acme\\App\\Tests\\": "tests/"
+    }
+  }
+}
