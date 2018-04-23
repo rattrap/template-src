@@ -1,9 +1,33 @@
 # template
 
 ```
-docker build -t template-src:latest .
+git clone git@github.com:rattrap/template-src.git new-project
 ```
 
 ```
-docker run -it template-src:latest
+cd new-project
+```
+
+```
+rm -rf .git
+```
+
+```
+git init
+```
+
+```
+git add .
+```
+
+```
+git commit -m "Initial commit"
+```
+
+```
+docker build -t new-project:latest .
+```
+
+```
+docker run -it new-project:latest
 ```
